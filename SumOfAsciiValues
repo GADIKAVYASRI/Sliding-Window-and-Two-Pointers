@@ -1,0 +1,12 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        String s="animuthyam";
+        int len=0;
+        for(int i=0;i<s.length()-2;i++){
+            int temp=(int)s.charAt(i)+(int)s.charAt(i+1)+(int)s.charAt(i+2);
+            len=Math.max(len,temp);
+        }
+        System.out.print(len);
+    }
+}
